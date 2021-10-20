@@ -1,157 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            #first-div {
-                height: 100px;
-                width: 270px;
-                background-color: rgb(0, 50, 80);
-                padding: 30px;
-                color: white;
-                float: left;
-            }
-
-            .other-divs{
-                height: 100px;
-                width: 180px;
-                background-color: rgb(0, 50, 80);
-                padding: 37px;
-                color: white;
-                float: left;
-                font-size: 24px;
-            }
-
-            #special {
-                width: 736px;
-            }
-
-            .middle{
-                margin-left: 40px;
-            }
-            .header {
-                font-size: 30px;
-                color: rgb(0, 50, 80);
-                float: left;
-                margin-top: 50px;
-                margin-right: 930px;
-            }
-
-            .pics {
-                border-radius: 25px;
-                float: left;
-                padding-left: 40px;
-                padding: 20px;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-                margin-right: 40px;
-                margin-top: 40px;
-            }
-
-            #tiktok.pics{
-                margin-right: 660px;
-            }
-
-            .header-two{
-                font-size: 30px;
-                color: rgb(0, 50, 80);
-                float: left;
-                margin-top: 50px;
-                margin-bottom: 30px;
-                margin-right: 900px;
-            }
-
-            .button{
-                background-color: white;
-                color: sandybrown;
-                text-align: center;
-                font-size: 12px;
-                border-color: sandybrown;
-                border-radius: 15px;
-                padding: 15px 40px;
-                margin-top: 20px;
-            }
-
-        </style>
-</head>
-<body>
-    
-    <div class="top">
-        <span id="first-div"> 
-            <h1>Hoxton Media</h1>
-        </span>
-
-        <span class="other-divs">
-            Home
-        </span>
-
-        <span class="other-divs">
-            About us
-        </span>
-
-        <span class="other-divs" id="special">
-            Contact us
-        </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hoxton Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <h1 id="logo">Hoxton Media</h1>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="middle">
-
-        <div class="header">
-            POST AUTOMATICALLY TO
-        </div>
-
-        <span class="pics">
-            <img src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\yt.jpg" 
-            width="150px"
-            alt="youtube logo">
-        </span>
-
-        <span class="pics">
-            <img src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\insta.png"
-            width="150px"
-            alt="insta logo">
-        </span>
-
-        <span class="pics" id="tiktok">
-            <img src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\tiktok.jpg" 
-            width="150px"
-            alt="tiktok logo">
-        </span>
-
-        <div class="header-two">
-            SOCIAL WITHOUT THE FUSS!
-        </div>
+    <div class="main">
         
-        <div>
-            <p>With our service you'll never have to worry about managing your social 
-                media accounts separately anymore.</p>
-                <br>
-            <p>Just sign up, describe your content, and our smart machine-learning service will generate the content
-                and deliver it to every social media platform.</p>
-                <br>
-            <p>Subscribe now, get your first month free and savings up to <b>50%</b>!</p>
-        </div>
+    <h2>POST AUTOMATICALLY TO</h2>
+      
+        <a href="#" class="social">
+          <img class="social-logo"
+          src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\yt.jpg"
+          alt="YouTube logo"/>
+        </a>
+      
+        <a href="#" class="social">
+          <img class="social-logo"
+          src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\insta.png"
+          alt="Instagram logo"/>
+        </a>
+      
+        <a href="#" class="social">
+          <img class="social-logo"
+          src="C:\Users\Perdorues\Desktop\Hoxton\hoxton-html-hoxton-media\tiktok.jpg"
+          alt="TikTok logo"/>
+        </a>
 
-        <button class="button"> <b>SUBSCRIBE NOW</b> </button>
-
+      <h2>SOCIAL WITHOUT THE FUSS</h2>
+      <p>
+       With our service you'll never have to worry about managing your social media accounts separately anymore.
+      </p>
+      <p>
+        Just sign up, describe your content, and our smart machine learning service will generate the content
+        and deliver it to every social media platform.
+      </p>
+      <p>
+        Subscribe now, get your first month free and savings up to <b>50%</b>!
+      </p>
+      <a class="subscribe" href="#">SUBSCRIBE NOW</a>
     </div>
-<!-- 
-    <div class="bottom">
-
-        <div id="footer">
-            <h3>Footer Navigation</h3>
-        </div>
-
-
-    </div> -->
-
-        </body>
+    <div class="footer">
+      <h3>Footer navigation</h3>
+      <ul>
+        <li>A Nice Feature</li>
+        <li>
+          A Cool Option with Suboptions
+          <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+          </ul>
+        </li>
+        <li>Even More Stuff</li>
+        <li>A Final Thing</li>
+      </ul>
+    </div>
+  </body>
 </html>
